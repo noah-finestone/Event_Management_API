@@ -202,7 +202,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"table\": {{table_id}},\n    \"accompanying_guests\": 1\n}",
+							"raw": "{\n    \"table\": 1,\n    \"accompanying_guests\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
