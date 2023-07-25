@@ -33,7 +33,7 @@ pip install fastapi[all]
 
 ````
 
-Then go this repo folder in your local computer run follwoing command
+Then go this repo folder in your local computer run the following command
 ````
 
 uvicorn main:app --reload
@@ -62,3 +62,6 @@ pytest -v -s app/tests/test_guest.py
 
 
 ```
+
+
+
