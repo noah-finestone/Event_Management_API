@@ -48,6 +48,19 @@ http://127.0.0.1:8000/docs
 
 ````
 
+## After running this API you need a database in postgres 
+Create a database in postgres that corresponds to these fields so you can see the API work its magic
+
+````
+connection = pymysql.connect(host='localhost',
+                            user='user',
+                            password='password',
+                            database='end_of_year_party_db',
+                            cursorclass=pymysql.cursors.DictCursor)
+        cursor = connection.cursor()
+
+````
+
 # How to Run Tests
 
 To run the tests for the table and guest routes, follow these steps:
@@ -60,8 +73,21 @@ pytest -v -s app/tests/test_table.py
 
 pytest -v -s app/tests/test_guest.py
 
-
 ```
+
+# Notes on testing my code: 
+
+I was able to dockerise my application but was unable to get the `make postman-public-test` command to work - all tests would fail. It would be appreciated if you ran the command `uvicorn main:app --reload` and then import the the gile `postman-public-test.json` into postman and test the API through its endpoints. 
+
+# Future Improvements
+
+## 1) Security Measures: Implement additional authentication mechanisms, such as OAuth, to protect the guests data and ensure secure access to the API endpoints.
+
+## 2) CI/CD: Implements automated testing to validate the API's functionality whenever the code is pushed to github. 
+
+## 3) Statistics routes: It would be useful to have routes to detch guest and table statistics. This could include the total number of guests, the number of accompanying guests, the busiest tables, etc.
+
+## 4) Waitlist Management: Instead of rejecting guets who arrive with a larger group then their table capacity, perhaps creating a waitlist where guests can join the waitlist and get notified if seats become available.
 
 
 
