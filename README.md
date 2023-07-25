@@ -10,7 +10,7 @@ This API serves as the backend for managing the arrangements and interactions fo
 
 ## 2) Guest route
 
-#### The guests route deals with managing guests for the party. It allows adding guests to the guest list, checking them in, and tracking their arrival time.
+#### The guests route deals with managing guests for the party. It allows adding guests to the guest list, checking them in, checking them out, and tracking their arrival time.
 
 # How to run locally
 First clone this repo by using following command
