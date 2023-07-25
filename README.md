@@ -26,14 +26,14 @@ cd GetGround_Backend_Assignment
 
 ````
 
-Then install fastapp using all flag like (or pip install -r requirements.txt)
+Then install fastapi using all flag like (or pip install -r requirements.txt)
 ```
 
 pip install fastapi[all]
 
 ````
 
-Then go this repo folder in your local computer run the following command
+Then go to the root folder of this project and run the following command
 ````
 
 uvicorn app.main:app --reload
