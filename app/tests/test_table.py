@@ -3,7 +3,7 @@ from .database import client, session
 
 def test_add_table(client):
     res = client.post("/tables", json={"capacity": 10})
-    print(res.json)
+
     assert res.status_code == 201
 
 def test_count_empty_seats(client):

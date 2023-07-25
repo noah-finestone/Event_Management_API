@@ -1,0 +1,38 @@
+version: "3"
+services:
+  api:
+    build: .
+    depends_on:
+      - mysql
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/usr/src/app:ro
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - DATABASE_HOSTNAME=mysql
+      - DATABASE_PORT=3306
+      - DATABASE_PASSWORD=password
+      - DATABASE_NAME=end_of_year_party_db
+      - DATABASE_USERNAME=user
+      - SECRET_KEY=your_secret_key
+      - ALGORITHM=your_algorithm
+      - ACCESS_TOKEN_EXPIRE_MINUTES=60
+    
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=end_of_year_party_db
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+    volumes:
+      - mysql-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  mysql-db:

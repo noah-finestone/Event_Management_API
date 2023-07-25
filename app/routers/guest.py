@@ -57,13 +57,13 @@ def guest_arrives(name: str, guest: schemas.GuestArrival, db: Session = Depends(
     table = db.query(models.Table).filter(models.Table.id == guest_model.table_id).first()
     if table:
         total_guests = guest.accompanying_guests + 1  # Adding 1 for the guest being added
-        if total_guests <= table.capacity + guest_model.accompanying_guests:
+        if total_guests <= table.capacity:
             # Update the table capacity
             table.capacity -= total_guests
             db.commit()
-
-            # Update the guest's accompanying guests count
-            guest_model.accompanying_guests += guest.accompanying_guests
+    
+            # Update the guest's accompanying guests count (if they come with more people)
+            guest_model.accompanying_guests = guest.accompanying_guests
             
             guest_model.time_arrived = datetime.now()
 

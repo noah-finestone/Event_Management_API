@@ -28,5 +28,3 @@ while True:
 
 app.include_router(guest.router)
 app.include_router(table.router)
-
-        
