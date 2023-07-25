@@ -79,15 +79,15 @@ pytest -v -s app/tests/test_guest.py
 
 I was able to dockerise my application but was unable to get the `make postman-public-test` command to work - all tests would fail. It would be appreciated if you ran the command `uvicorn main:app --reload` and then import the file `postman-public-test.json` into postman and test the API through its endpoints. 
 
-# Future Improvements
+## Future Improvements
 
-## 1) Security Measures: Implement additional authentication mechanisms, such as OAuth, to protect the guests data and ensure secure access to the API endpoints.
+# 1) Security Measures: Implement additional authentication mechanisms, such as OAuth, to protect the guests data and ensure secure access to the API endpoints.
 
-## 2) CI/CD: Implements automated testing to validate the API's functionality whenever the code is pushed to github. 
+# 2) CI/CD: Implements automated testing to validate the API's functionality whenever the code is pushed to github. 
 
-## 3) Statistics routes: It would be useful to have routes to detch guest and table statistics. This could include the total number of guests, the number of accompanying guests, the busiest tables, etc.
+# 3) Statistics routes: It would be useful to have routes to detch guest and table statistics. This could include the total number of guests, the number of accompanying guests, the busiest tables, etc.
 
-## 4) Waitlist Management: Instead of rejecting guets who arrive with a larger group then their table capacity, perhaps creating a waitlist where guests can join the waitlist and get notified if seats become available.
+# 4) Waitlist Management: Instead of rejecting guets who arrive with a larger group then their table capacity, perhaps creating a waitlist where guests can join the waitlist and get notified if seats become available.
 
 
 
