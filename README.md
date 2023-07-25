@@ -26,11 +26,10 @@ cd GetGround_Backend_Assignment
 
 ````
 
-Then install all the requirements for the app like 
+Then install fastapp using all flag like (or pip install -r requirements.txt)
+```
 
-````
-
-pip install -r requirements.txt
+pip install fastapi[all]
 
 ````
 
