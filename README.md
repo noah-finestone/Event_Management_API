@@ -64,7 +64,7 @@ connection = pymysql.connect(host='localhost',
 # How to Run Tests
 
 To run the tests for the table and guest routes, follow these steps:
-## 1) Change to the project directory
+## 1) cd to the root directory of the project
 
 ## 2) Execute the following command to run the test_table.py or test_guest.py file:
 ```
