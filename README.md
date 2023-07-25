@@ -1,6 +1,6 @@
 # GetGround_Backend_Assignment
 
-This API serves as the backend for managing the arrangements and interactions for the End-of-Year Party.
+This API serves as the backend for managing the arrangements and interactions for the GetGround End-of-Year Party.
 
 #### This API  has 2 routes
 
