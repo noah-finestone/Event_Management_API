@@ -27,12 +27,12 @@ or if using the bundle binary file use the following command
 git clone guestlist.bundle my_repo_clone
 
 ```
-then 
-````
+then cd into the root folder of the cloned repo
+
 
 ```cd GetGround_Backend_Assignment``` or ```cd my_repo_clone```
 
-````
+
 
 Then install fastapi using all flag like (or pip install -r requirements.txt)
 ```
