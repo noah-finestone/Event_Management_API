@@ -29,10 +29,17 @@ git clone guestlist.bundle my_repo_clone
 ```
 then cd into the root folder of the cloned repo
 
+```
 
-```cd GetGround_Backend_Assignment``` or ```cd my_repo_clone```
+cd GetGround_Backend_Assignment
 
+``` 
+or using 
+```
 
+cd my_repo_clone
+
+```
 
 Then install fastapi using all flag like (or pip install -r requirements.txt)
 ```
