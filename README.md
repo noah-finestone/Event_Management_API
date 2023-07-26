@@ -41,7 +41,7 @@ cd my_repo_clone
 
 ```
 
-Then install fastapi and all the project requirements using all flag like
+Then install fastapi and all the project requirements using the following command
 ```
 
 pip install -r requirements.txt
