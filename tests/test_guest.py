@@ -102,7 +102,6 @@ def test_get_arrived_guests(client, session, check_in_guest):
     session.commit()
 
     guest = session.merge(guest)
-    print(guest.name)
 
     # Make a request to the /guests endpoint to get the arrived guests
     response = client.get("/guests") 
