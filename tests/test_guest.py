@@ -109,11 +109,5 @@ def test_get_arrived_guests(client, session, check_in_guest):
     # Assert response
     assert response.status_code == 200
     assert "guests" in response.json()
-    assert guest.name == "john"
-
-    # Extract the time_arrived from the response
-    if response.json()["guests"]:
-        time_arrived_str = response.json()["guests"][0]["time_arrived"]
-        assert time_arrived_str is not None, "Guest arrival time should not be None"
-    else:
-        print("No guests found in the response.")
+    time_arrived_str = response.json()["guests"][0]["time_arrived"]
+    assert time_arrived_str is not None, "Guest arrival time should not be None"
