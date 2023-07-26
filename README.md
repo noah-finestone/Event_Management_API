@@ -64,7 +64,7 @@ http://127.0.0.1:8000/docs
 ````
 
 ## After running this API you need a database in postgres 
-Create a database in postgres that corresponds to these fields so you can see the API work its magic
+Create a database in MySQLWorkbench or using the terminal that corresponds to these fields so you can see the API work its magic
 
 ````
 connection = pymysql.connect(host='localhost',
