@@ -6,7 +6,7 @@ This API serves as the backend for managing the arrangements and interactions fo
 
 ## 1) Table route
 
-#### This route is responsible for managing the party tables. It allows adding tables and checking the availability of seats at the party.
+#### This route is responsible for managing the tables of the event. It allows adding tables and checking the availability of seats at the party.
 
 ## 2) Guest route
 
