@@ -41,10 +41,10 @@ cd my_repo_clone
 
 ```
 
-Then install fastapi using all flag like (or pip install -r requirements.txt)
+Then install fastapi and all the project requirements using all flag like
 ```
 
-pip install fastapi[all]
+pip install -r requirements.txt
 
 ````
 
