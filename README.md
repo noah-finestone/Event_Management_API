@@ -13,16 +13,24 @@ This API serves as the backend for managing the arrangements and interactions fo
 #### The guests route deals with managing guests for the party. It allows adding guests to the guest list, checking them in, checking them out, and tracking their arrival time.
 
 # How to run locally
-First clone this repo by using following command
+First if using Github clone this repo by using following command
 ````
 
 git clone https://github.com/noah-finestone/GetGround_Backend_Assignment
 
 ````
+
+or if using the bundle binary file use the following command
+
+```
+
+git clone guestlist.bundle my_repo_clone
+
+```
 then 
 ````
 
-cd GetGround_Backend_Assignment
+cd GetGround_Backend_Assignment or cd my_repo_clone
 
 ````
 
