@@ -30,7 +30,7 @@ git clone guestlist.bundle my_repo_clone
 then 
 ````
 
-cd GetGround_Backend_Assignment or cd my_repo_clone
+```cd GetGround_Backend_Assignment``` or ```cd my_repo_clone```
 
 ````
 
