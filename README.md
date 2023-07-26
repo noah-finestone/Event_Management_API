@@ -20,7 +20,7 @@ git clone https://github.com/noah-finestone/GetGround_Backend_Assignment
 
 ````
 
-or if using the bundle binary file use the following command
+or if using the bundle binary file, cd into a foler where you want to clone the project, past the binary file and then run the command
 
 ```
 
