@@ -16,7 +16,7 @@ This API serves as the backend for managing the arrangements and interactions fo
 First if using Github clone this repo by using following command
 ````
 
-git clone https://github.com/noah-finestone/GetGround_Backend_Assignment
+git clone https://github.com/noah-finestone/NoahFinestone_GetGround_Backend_Assignment
 
 ````
 
@@ -31,7 +31,7 @@ git clone guestlist.bundle my_repo_clone
 then cd into the root folder of the cloned repo using
 ```
 
-cd GetGround_Backend_Assignment
+cd NoahFinestone_GetGround_Backend_Assignment
 
 ``` 
 or using 
