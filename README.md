@@ -1,39 +1,54 @@
 # GetGround_Backend_Assignment
 
-This API serves as the backend for managing the arrangements and interactions for the End-of-Year Party.
+This API serves as the backend for managing the arrangements and interactions for the GetGround End-of-Year Party.
 
 #### This API  has 2 routes
 
 ## 1) Table route
 
-#### This route is responsible for managing the party tables. It allows adding tables and checking the availability of seats at the party.
+#### This route is responsible for managing the tables of the event. It allows adding tables and checking the availability of seats at the party.
 
 ## 2) Guest route
 
 #### The guests route deals with managing guests for the party. It allows adding guests to the guest list, checking them in, checking them out, and tracking their arrival time.
 
 # How to run locally
-First clone this repo by using following command
+First if using Github clone this repo by using following command
 ````
 
 git clone https://github.com/noah-finestone/GetGround_Backend_Assignment
 
 ````
-then 
-````
+
+or if using the bundle binary file use the following command
+
+```
+
+git clone guestlist.bundle my_repo_clone
+
+```
+
+then cd into the root folder of the cloned repo using
+```
 
 cd GetGround_Backend_Assignment
 
-````
+``` 
+or using 
+```
 
-Then install fastapp using all flag like (or pip install -r requirements.txt)
+cd my_repo_clone
+
+```
+
+Then install fastapi using all flag like (or pip install -r requirements.txt)
 ```
 
 pip install fastapi[all]
 
 ````
 
-Then go this repo folder in your local computer run the following command
+Then go to the root folder of this project and run the following command
 ````
 
 uvicorn app.main:app --reload
@@ -64,7 +79,7 @@ connection = pymysql.connect(host='localhost',
 # How to Run Tests
 
 To run the tests for the table and guest routes, follow these steps:
-## 1) Change to the project directory
+## 1) cd to the root directory of the project
 
 ## 2) Execute the following command to run the test_table.py or test_guest.py file:
 ```
@@ -77,17 +92,17 @@ pytest -v -s app/tests/test_guest.py
 
 # Notes on testing my code: 
 
-I was able to dockerise my application but was unable to get the `make postman-public-test` command to work - all tests would fail. It would be appreciated if you ran the command `uvicorn main:app --reload` and then import the the gile `postman-public-test.json` into postman and test the API through its endpoints. 
+I was able to dockerise my application but was unable to get the `make postman-public-test` command to work - all tests would fail. It would be appreciated if you ran the command `uvicorn main:app --reload` and then import the file `postman-public-test.json` into postman and test the API through its endpoints. 
 
 # Future Improvements
 
-## 1) Security Measures: Implement additional authentication mechanisms, such as OAuth, to protect the guests data and ensure secure access to the API endpoints.
+1) Security Measures: Implement additional authentication mechanisms, such as OAuth, to protect the guests data and ensure secure access to the API endpoints.
 
-## 2) CI/CD: Implements automated testing to validate the API's functionality whenever the code is pushed to github. 
+2) CI/CD: Implements automated testing to validate the API's functionality whenever the code is pushed to github. 
 
-## 3) Statistics routes: It would be useful to have routes to detch guest and table statistics. This could include the total number of guests, the number of accompanying guests, the busiest tables, etc.
+3) Statistics routes: It would be useful to have routes to fetch guest and table statistics. This could include the total number of guests, the number of accompanying guests, the busiest tables, etc.
 
-## 4) Waitlist Management: Instead of rejecting guets who arrive with a larger group then their table capacity, perhaps creating a waitlist where guests can join the waitlist and get notified if seats become available.
+4) Waitlist Management: Instead of rejecting guets who arrive with a larger group than their table capacity, perhaps creating a waitlist where guests can join the waitlist and get notified if seats become available would be better.
 
 
 
