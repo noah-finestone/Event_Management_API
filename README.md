@@ -86,9 +86,9 @@ To run the unit tests:
 ## 3) Execute the following command to run the test_table.py or test_guest.py file:
 ```
 
-pytest -v -s app/tests/test_table.py
+pytest -v -s tests/test_table.py
 
-pytest -v -s app/tests/test_guest.py
+pytest -v -s tests/test_guest.py
 
 ```
 
