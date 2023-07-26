@@ -27,7 +27,7 @@ or if using the bundle binary file use the following command
 git clone guestlist.bundle my_repo_clone
 
 ```
-then cd into the root folder of the cloned repo
+then cd into the root folder of the cloned repo using
 
 ```
 
