@@ -64,7 +64,7 @@ http://127.0.0.1:8000/docs
 ````
 
 ## After running this API you need a database in postgres 
-Create a database in MySQLWorkbench or using the terminal that corresponds to these fields so you can see the API work its magic
+Create a database in MySQLWorkbench or using the terminal that corresponds to these fields - make sure to copy the exact answers for each field otherwise you will have to manually change the fields in the main.py and database.py file, so you can see the API work its magic
 
 ````
 connection = pymysql.connect(host='localhost',
@@ -78,10 +78,12 @@ connection = pymysql.connect(host='localhost',
 
 # How to Run Tests
 
-To run the tests for the table and guest routes, follow these steps:
-## 1) cd to the root directory of the project
+To run the unit tests:
+## 1) Create a new schema/database in the connected sever called "end_of_year_party_db_test". 
 
-## 2) Execute the following command to run the test_table.py or test_guest.py file:
+## 2) cd to the root directory of the project
+
+## 3) Execute the following command to run the test_table.py or test_guest.py file:
 ```
 
 pytest -v -s app/tests/test_table.py
