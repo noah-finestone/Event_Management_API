@@ -85,9 +85,9 @@ I was able to dockerise my application but was unable to get the `make postman-p
 
 2) CI/CD: Implements automated testing to validate the API's functionality whenever the code is pushed to github. 
 
-3) Statistics routes: It would be useful to have routes to detch guest and table statistics. This could include the total number of guests, the number of accompanying guests, the busiest tables, etc.
+3) Statistics routes: It would be useful to have routes to fetch guest and table statistics. This could include the total number of guests, the number of accompanying guests, the busiest tables, etc.
 
-4) Waitlist Management: Instead of rejecting guets who arrive with a larger group then their table capacity, perhaps creating a waitlist where guests can join the waitlist and get notified if seats become available.
+4) Waitlist Management: Instead of rejecting guets who arrive with a larger group than their table capacity, perhaps creating a waitlist where guests can join the waitlist and get notified if seats become available would be more efficient.
 
 
 
