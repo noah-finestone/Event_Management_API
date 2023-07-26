@@ -12,7 +12,7 @@ bundle: ## bundles the submission for... submission
 	git bundle create guestlist.bundle --all
 
 .PHONY: postman-public-test
-postman-public-test: ## test postman public collection # newman run postman/GetGroundTechTask.postman_collection.json
+postman-public-test: ## test postman public collection 
 	newman run postman/postman-public-test.json
 
 
