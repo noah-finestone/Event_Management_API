@@ -3,7 +3,8 @@ from .database import client, session
 
 def test_add_table(client):
     res = client.post("/tables", json={"capacity": 10})
-
+    
+    # Assert response
     assert res.status_code == 201
 
 def test_count_empty_seats(client):
@@ -14,9 +15,8 @@ def test_count_empty_seats(client):
     res = client.get("/seats_empty")
     assert res.status_code == 200
     data = res.json()
-    # Check that the response contains the expected keys
+    # Assert response
     assert "seats_empty" in data
-    # Check that the value of "seats_empty" is an integer
     assert isinstance(data["seats_empty"], int)
     # Since the database has one table with capacity 10 and no guests, "seats_empty" should be 10
     assert data["seats_empty"] == 10

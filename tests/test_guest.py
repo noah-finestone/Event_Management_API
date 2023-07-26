@@ -43,7 +43,7 @@ def test_add_to_guest_list(client, add_table):
     res = client.post("/guest_list/john", json=data)
     checked_in_guest = schemas.AddGuestResponse(**res.json())
 
-    # Assert the response
+    # Assert response
     assert res.status_code == 201
     assert checked_in_guest.name == "john"
 
@@ -57,7 +57,7 @@ def test_check_in(client, add_table, check_in_guest, session):
     }
     res_check_in = client.put(f"/guests/{guest.name}", json=data_check_in)
 
-    # Assert the response
+    # Assert response
     assert res_check_in.status_code == 200
     assert res_check_in.json()["name"] == "john"
 
@@ -73,7 +73,7 @@ def test_guest_leaves(client, check_in_guest, session, add_table):
     # Make a request to the guest_leaves endpoint to delete the guest
     response = client.delete(f"/guests/{check_in_guest_response.name}")
 
-    # Assert the response
+    # Assert response
     assert response.status_code == 204
 
 def test_get_guest_list(client, session, add_table):
@@ -86,7 +86,7 @@ def test_get_guest_list(client, session, add_table):
     # Make a request to the get_guest_list endpoint
     response = client.get("/guest_list")
 
-    # Assert the response
+    # Assert response
     assert response.status_code == 200
     assert "guests" in response.json()
     assert len(response.json()["guests"]) == 1
@@ -106,7 +106,7 @@ def test_get_arrived_guests(client, session, check_in_guest):
     # Make a request to the /guests endpoint to get the arrived guests
     response = client.get("/guests") 
     
-    # Assert the response
+    # Assert response
     assert response.status_code == 200
     assert "guests" in response.json()
     assert guest.name == "john"
