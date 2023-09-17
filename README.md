@@ -1,6 +1,6 @@
 # Backend API for an event management system
 
-This API serves as the backend system for managing the arrangements and interactions of an event and its guestlist. 
+This API serves as the backend system for managing the arrangements and interactions of an event/party and its guestlist. 
 
 #### This API  has 2 routes
 
