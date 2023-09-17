@@ -92,10 +92,6 @@ pytest -v -s tests/test_guest.py
 
 ```
 
-# (IMPORTANT) Notes on testing my code: 
-
-I was able to dockerise my application but was unable to get the `make postman-public-test` command to work - all tests would fail. It would be appreciated if you ran the command `uvicorn main:app --reload` and then import the file found in the postman folder called `postman-public-test.json` into postman and test the API through its endpoints there. 
-
 # Future Improvements
 
 1) Security Measures: Implement additional authentication mechanisms, such as OAuth, to protect the guests data and ensure secure access to the API endpoints.
