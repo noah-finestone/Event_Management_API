@@ -1,6 +1,6 @@
-# Noah Finestone Submission - GetGround_Backend_Assignment
+# Backend API for an event management system
 
-This API serves as the backend for managing the arrangements and interactions for the GetGround End-of-Year Party.
+This API serves as the backend for managing the arrangements and interactions for events through a guestlist. 
 
 #### This API  has 2 routes
 
@@ -16,7 +16,7 @@ This API serves as the backend for managing the arrangements and interactions fo
 First if using Github clone this repo by using following command
 ````
 
-git clone https://github.com/noah-finestone/NoahFinestone_GetGround_Backend_Assignment
+git clone https://github.com/noah-finestone/Event_Management_API
 
 ````
 
@@ -31,7 +31,7 @@ git clone guestlist.bundle my_repo_clone
 then cd into the root folder of the cloned repo using
 ```
 
-cd NoahFinestone_GetGround_Backend_Assignment
+cd Event_Management_API
 
 ``` 
 or using 
